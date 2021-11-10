@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="64.342">
-    <testcase classname="US1001 amazon arama" name="TC01 amazon nutella arama" time="11.838">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="56.884">
+    <testcase classname="US1001 amazon arama" name="TC01 amazon nutella arama" time="20.892">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And nutella icin arama yapar................................................passed
@@ -9,7 +9,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1001 amazon arama" name="TC02 amazon java arama" time="11.559">
+    <testcase classname="US1001 amazon arama" name="TC02 amazon java arama" time="8.12">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And java icin arama yapar...................................................passed
@@ -18,7 +18,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1001 amazon arama" name="TC03 amazon java arama" time="9.956">
+    <testcase classname="US1001 amazon arama" name="TC03 amazon java arama" time="6.919">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And ipad icin arama yapar...................................................passed
@@ -27,7 +27,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC04 amazon nutella arama" time="9.05">
+    <testcase classname="US1002 amazon background ile arama" name="TC04 amazon nutella arama" time="5.681">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And nutella icin arama yapar................................................passed
@@ -36,7 +36,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC05 amazon java arama" time="10.209">
+    <testcase classname="US1002 amazon background ile arama" name="TC05 amazon java arama" time="7.336">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And java icin arama yapar...................................................passed
@@ -45,7 +45,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC06 amazon java arama" time="11.29">
+    <testcase classname="US1002 amazon background ile arama" name="TC06 amazon java arama" time="7.688">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And ipad icin arama yapar...................................................passed
