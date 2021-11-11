@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cucumber</title>
+	<meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+	<link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20class%3D%22ml-3%20ml-md-0%22%20viewBox%3D%220%200%2040.59%2046.31%22%20width%3D%2240.59%22%20height%3D%2246.31%22%3E%0A%20%20%20%20%3Cg%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%2323d96c%22%20fill-rule%3D%22evenodd%22%20d%3D%22M30.283%203.645q-.528-.317-1.08-.593a16.164%2016.164%200%2000-1.154-.518c-.124-.052-.247-.1-.372-.149-.343-.127-.689-.268-1.042-.371a19.427%2019.427%200%2010-9.792%2037.51v5.56c11.676-1.753%2022.016-10.979%2022.787-23.093.459-7.289-3.193-14.73-9.347-18.346z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20d%3D%22M15.787%2046.307v-5.935A20.472%2020.472%200%201126.959%201.015c.274.08.557.187.832.291l.248.093c.165.064.291.113.417.167.348.137.739.313%201.208.543q.589.295%201.153.633c6.393%203.756%2010.354%2011.518%209.857%2019.316-.763%2012-10.722%2022.122-23.679%2024.067zm4.8-44.214h-.026a18.366%2018.366%200%2000-3.524%2036.408l.85.165v5.18c11.392-2.224%2020.009-11.272%2020.686-21.922.448-7.033-3.1-14.018-8.83-17.383l-.008-.005A14.691%2014.691%200%200027.654%203.5a5.74%205.74%200%2000-.344-.138l-.27-.1a9.49%209.49%200%2000-.708-.249%2018.425%2018.425%200%2000-5.743-.92z%22%2F%3E%0A%20%20%20%20%20%20%20%20%3Cpath%20fill%3D%22%23173647%22%20fill-rule%3D%22evenodd%22%20d%3D%22M16.666%2010.58a1.8%201.8%200%20011.583.608%204.184%204.184%200%2001.728%201.107c.645%201.422%201.027%203.461.23%204.605a6.334%206.334%200%2001-3.981-3.087%203.236%203.236%200%2001-.347-1.339%201.957%201.957%200%20011.787-1.894zm-5.683%208.025a7.742%207.742%200%20001.218.737%205.789%205.789%200%20004.883-.138%206.116%206.116%200%2000-3.345-3.45%203.664%203.664%200%2000-1.442-.321%201.884%201.884%200%2000-.319%200%201.766%201.766%200%2000-.995%203.172zm6.1%203.433c-.777-.518-2.379-.309-3.312-.292a4.416%204.416%200%2000-1.666.352%203.5%203.5%200%2000-1.218.738%201.817%201.817%200%20001.409%203.171%203.3%203.3%200%20001.442-.321c1.436-.62%203.141-2.32%203.346-3.648zm2.61%202a6.556%206.556%200%2000-3.724%203.506%203.091%203.091%200%2000-.321%201.314%201.907%201.907%200%20003.3%201.346%207.422%207.422%200%2000.7-1.218c.621-1.333.866-3.72.046-4.948zm2.557-7.167a5.941%205.941%200%20003.7-3.167%203.243%203.243%200%2000.319-1.346%201.915%201.915%200%2000-1.794-1.954%201.832%201.832%200%2000-1.6.641%207.382%207.382%200%2000-.705%201.218c-.62%201.434-.842%203.48.081%204.603zm4.208%2012.115a3.244%203.244%200%2000-.321-1.345%205.869%205.869%200%2000-3.554-3.269%205.386%205.386%200%2000-.226%204.711%204.147%204.147%200%2000.7%201.121c1.133%201.23%203.505.32%203.402-1.218zm4.2-6.28a7.466%207.466%200%2000-1.217-.7%204.425%204.425%200%2000-1.666-.352%206.4%206.4%200%2000-3.188.555%205.959%205.959%200%20003.316%203.386%203.672%203.672%200%20001.442.32%201.8%201.8%200%20001.31-3.209z%22%2F%3E%0A%20%20%20%20%3C%2Fg%3E%0A%3C%2Fsvg%3E">
+	<style>
+.cucumber-react .cucumber-status--passed {
+  color: #2CB14A;
+}
+.cucumber-react .cucumber-status--skipped {
+  color: #00A0CC;
+}
+.cucumber-react .cucumber-status--pending {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--undefined {
+  color: #FFAD33;
+}
+.cucumber-react .cucumber-status--ambiguous {
+  color: #F4EBFD;
+}
+.cucumber-react .cucumber-status--failed {
+  color: #BB0000;
+}
+.cucumber-react .cucumber-status--unknown {
+  color: #B6BECB;
+}
+.cucumber-react h1, .cucumber-react h2, .cucumber-react h3 {
+  padding: 0;
+  margin: 0;
+}
+.cucumber-react a {
+  color: inherit;
+}
+.cucumber-react .gherkin-document-list {
+  font: 14px "Open Sans", sans-serif;
+  color: #161C24;
+  background: #fff;
+  overflow-x: hidden;
+}
+.cucumber-react .cucumber-title {
+  margin-top: 0.3em;
+  margin-bottom: 0;
+  display: inline-block;
+}
+.cucumber-react .cucumber-title__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-title__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-tags {
+  padding: 0;
+  margin-bottom: 0;
+}
+.cucumber-react .cucumber-tags .cucumber-tag {
+  display: inline;
+  list-style-type: none;
+  padding: 4px 8px 4px 8px;
+  margin-right: 6px;
+  background-color: #FFFFFF;
+  border-radius: 6px;
+}
+.cucumber-react .cucumber-feature__icon {
+  padding-top: 0.35em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-description,
+.cucumber-react .cucumber-children {
+  margin-left: 1em;
+}
+.cucumber-react .cucumber-feature,
+.cucumber-react .cucumber-rule,
+.cucumber-react .cucumber-scenario,
+.cucumber-react .cucumber-background {
+  margin-bottom: 1em;
+}
+.cucumber-react .cucumber-steps {
+  list-style-type: none;
+  padding-left: 10px;
+}
+.cucumber-react .cucumber-steps .cucumber-step {
+  display: flex;
+}
+.cucumber-react .cucumber-steps .cucumber-step__status {
+  padding-top: 0.2em;
+  padding-right: 0.5em;
+}
+.cucumber-react .cucumber-steps .cucumber-step__content {
+  flex-grow: 1;
+  max-width: calc(100% - 1.5em);
+}
+.cucumber-react .cucumber-steps .cucumber-step__keyword {
+  font-weight: bold;
+}
+.cucumber-react .cucumber-steps .cucumber-step__text {
+  font-weight: normal;
+}
+.cucumber-react .cucumber-steps .cucumber-step__param {
+  font-weight: normal;
+  font-style: italic;
+}
+.cucumber-react .cucumber-table {
+  border-collapse: collapse;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+.cucumber-react .cucumber-table__header-cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell {
+  border: 1px solid #4B5662;
+  padding: 0.3em;
+}
+.cucumber-react .cucumber-table__cell__status {
+  padding: 0.5em 3px 3px 3px;
+}
+.cucumber-react .cucumber-table__cell__step {
+  flex-grow: 1;
+}
+.cucumber-react .cucumber-code {
+  padding: 0.25em;
+  background-color: #ebebeb;
+}
+.cucumber-react .cucumber-error {
+  padding: 0.5em;
+  margin: 0;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-no-documents {
+  font: 14px "Open Sans", sans-serif;
+}
+.cucumber-react .cucumber-attachment__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-attachment__image {
+  max-width: 100%;
+  margin-top: 1em;
+}
+.cucumber-react .cucumber-attachment__text {
+  background-color: #ebebeb;
+  padding: 0.5em;
+  overflow-x: auto;
+}
+.cucumber-react .cucumber-anchor {
+  position: relative;
+  display: flex;
+  align-items: center;
+  margin-top: 0.3em;
+}
+.cucumber-react .cucumber-anchor__link {
+  opacity: 0;
+  transition: all 0.35s ease-in-out;
+  position: absolute;
+  left: -20px;
+  display: flex;
+  align-items: center;
+}
+.cucumber-react .cucumber-anchor__icon {
+  margin-right: 0.5em;
+}
+.cucumber-react .cucumber-anchor:hover a {
+  opacity: 1;
+  width: max-content;
+  transition: all 0.35s ease-in-out;
+}
+.cucumber-react .cucumber-anchor > * {
+  height: 100%;
+  margin-top: 0px;
+}
+
+.cucumber-report-header {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  font: 11px "Open Sans", sans-serif;
+  margin-bottom: 1em;
+}
+.cucumber-report-header > * {
+  padding: 1em;
+}
+.cucumber-report-header .cucumber-status-filter {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-status-filter table {
+  width: 100%;
+}
+.cucumber-report-header .cucumber-execution-data {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.cucumber-report-header .cucumber-search-bar {
+  border-right: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 9fr 1fr;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search input {
+  padding: 0.4em;
+  border-radius: 0;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-search button {
+  height: 2.2em;
+  padding-left: 0.6em;
+  padding-right: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar p.help {
+  font-size: 80%;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul {
+  display: inline;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li {
+  list-style-type: none;
+  display: inline-block;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li input {
+  display: inline-block;
+  width: auto;
+  height: 0.6em;
+}
+.cucumber-report-header .cucumber-search-bar form.cucumber-search-bar-filter ul li label {
+  padding-right: 1em;
+}
+
+@media only screen and (min-width: 600px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: 1/-1;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .cucumber-report-header {
+    grid-template-columns: 1fr 1fr 2fr;
+  }
+  .cucumber-report-header .cucumber-status-filter {
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-execution-data {
+    border-right: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 0;
+  }
+  .cucumber-report-header .cucumber-search-bar {
+    grid-column: auto;
+  }
+}
+.accordion {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+}
+
+.accordion__item + .accordion__item {
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.accordion__button {
+    background-color: #f4f4f4;
+    color: #444;
+    cursor: pointer;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+    border: none;
+}
+
+.accordion__button:hover {
+    background-color: #ddd;
+}
+
+.accordion__button:before {
+    display: inline-block;
+    content: '';
+    height: 10px;
+    width: 10px;
+    margin-right: 12px;
+    border-bottom: 2px solid currentColor;
+    border-right: 2px solid currentColor;
+    transform: rotate(-45deg);
+}
+
+.accordion__button[aria-expanded='true']::before,
+.accordion__button[aria-selected='true']::before {
+    transform: rotate(45deg);
+}
+
+.accordion__panel {
+    padding: 20px;
+    animation: fadein 0.35s ease-in;
+}
+
+	</style>
+</head>
+<body>
+<div id="content">
+</div>
+<script>
+window.CUCUMBER_MESSAGES = [{"meta":{"protocolVersion":"15.0.0","implementation":{"name":"cucumber-jvm","version":"6.10.4"},"runtime":{"name":"Java HotSpot(TM) 64-Bit Server VM","version":"11.0.11+9-LTS-194"},"os":{"name":"Windows 10"},"cpu":{"name":"amd64"}}},{"testRunStarted":{"timestamp":{"seconds":"1636625479","nanos":933640100}}},{"source":{"uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1001_amazonArama.feature","data":"@Paralel1\r\nFeature: US1001 amazon arama\r\n\r\n  @amazon @nutella\r\n  Scenario: TC01 amazon nutella arama\r\n\r\n    When kullanici amazon sayfasina gider\r\n    And nutella icin arama yapar\r\n    Then sonucun nutella icerdigini test eder\r\n    And sayfayi kapatir\r\n\r\n  @amazon @java\r\n  Scenario: TC02 amazon java arama\r\n    When kullanici amazon sayfasina gider\r\n    And java icin arama yapar\r\n    Then sonucun z icerdigini test eder\r\n    And sayfayi kapatir\r\n\r\n\r\n  @amazon @ipad\r\n  Scenario: TC03 amazon java arama\r\n    When kullanici amazon sayfasina gider\r\n    And ipad icin arama yapar\r\n    Then sonucun ipad icerdigini test eder\r\n    And sayfayi kapatir\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1001_amazonArama.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@Paralel1","id":"ee57494d-738a-4ad5-aeff-ca6a254ea8d4"}],"language":"en","keyword":"Feature","name":"US1001 amazon arama","children":[{"scenario":{"location":{"line":5,"column":3},"tags":[{"location":{"line":4,"column":3},"name":"@amazon","id":"43b2a7d8-2f45-4ed1-a955-164e8ec5a3f9"},{"location":{"line":4,"column":11},"name":"@nutella","id":"1442883d-ee33-4666-b495-56874f21c331"}],"keyword":"Scenario","name":"TC01 amazon nutella arama","steps":[{"location":{"line":7,"column":5},"keyword":"When ","text":"kullanici amazon sayfasina gider","id":"ea2586a0-18ab-49c8-9ecf-bb2409ccd92e"},{"location":{"line":8,"column":5},"keyword":"And ","text":"nutella icin arama yapar","id":"80b81714-0bf9-4d5e-926a-5660a18e67e2"},{"location":{"line":9,"column":5},"keyword":"Then ","text":"sonucun nutella icerdigini test eder","id":"d4a8531f-02d0-4af6-bff1-611d002b402f"},{"location":{"line":10,"column":5},"keyword":"And ","text":"sayfayi kapatir","id":"bb8c9652-e3f2-4cb2-b63c-93b57a546bda"}],"id":"1c330299-3c9d-46db-b123-f1002e99fffa"}},{"scenario":{"location":{"line":13,"column":3},"tags":[{"location":{"line":12,"column":3},"name":"@amazon","id":"901e03af-a46d-44f9-b822-2e68a656e251"},{"location":{"line":12,"column":11},"name":"@java","id":"71b5d3cc-5576-40e2-956a-88b3a7eb0eb5"}],"keyword":"Scenario","name":"TC02 amazon java arama","steps":[{"location":{"line":14,"column":5},"keyword":"When ","text":"kullanici amazon sayfasina gider","id":"88faf09a-b10b-45fe-a245-b35f0185b0f9"},{"location":{"line":15,"column":5},"keyword":"And ","text":"java icin arama yapar","id":"e78435f6-31f6-4508-873c-4a0c37cd074c"},{"location":{"line":16,"column":5},"keyword":"Then ","text":"sonucun z icerdigini test eder","id":"fcf00948-26b4-4ccc-b7fb-6cbf18f48600"},{"location":{"line":17,"column":5},"keyword":"And ","text":"sayfayi kapatir","id":"b5b482ec-b7d6-4dfe-b4e4-2ad269cfcef3"}],"id":"f3132d90-2377-4d4c-9708-d378e9c91aa8"}},{"scenario":{"location":{"line":21,"column":3},"tags":[{"location":{"line":20,"column":3},"name":"@amazon","id":"45ca3f11-84e1-45a0-be6d-361dce617c3c"},{"location":{"line":20,"column":11},"name":"@ipad","id":"91e89c2e-6871-4cb1-8795-495e92c34de1"}],"keyword":"Scenario","name":"TC03 amazon java arama","steps":[{"location":{"line":22,"column":5},"keyword":"When ","text":"kullanici amazon sayfasina gider","id":"b6739036-3bc9-4be6-b63b-ed96b7ecfcee"},{"location":{"line":23,"column":5},"keyword":"And ","text":"ipad icin arama yapar","id":"41c0673a-1566-4115-b79f-cae969ec4545"},{"location":{"line":24,"column":5},"keyword":"Then ","text":"sonucun ipad icerdigini test eder","id":"665e813e-1905-4240-9969-b14f7591ad44"},{"location":{"line":25,"column":5},"keyword":"And ","text":"sayfayi kapatir","id":"627f5431-79c8-40f9-bab8-64f05bd826a5"}],"id":"d8af323d-ecef-4ca6-87f9-1776aa56c5c2"}}]}}},{"pickle":{"id":"861c2cce-08cc-41e1-8159-20ff7be04168","uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1001_amazonArama.feature","name":"TC01 amazon nutella arama","language":"en","steps":[{"text":"kullanici amazon sayfasina gider","id":"d7a342f4-46c4-4f9b-868a-0af6d259cd24","astNodeIds":["ea2586a0-18ab-49c8-9ecf-bb2409ccd92e"]},{"text":"nutella icin arama yapar","id":"5f59c462-c3ed-4c05-8de5-313a74123496","astNodeIds":["80b81714-0bf9-4d5e-926a-5660a18e67e2"]},{"text":"sonucun nutella icerdigini test eder","id":"7bd7b122-4f52-494c-b5b2-e35695d7a2ae","astNodeIds":["d4a8531f-02d0-4af6-bff1-611d002b402f"]},{"text":"sayfayi kapatir","id":"86af0c94-8b01-490e-ab8d-e8453cc58ef8","astNodeIds":["bb8c9652-e3f2-4cb2-b63c-93b57a546bda"]}],"tags":[{"name":"@Paralel1","astNodeId":"ee57494d-738a-4ad5-aeff-ca6a254ea8d4"},{"name":"@amazon","astNodeId":"43b2a7d8-2f45-4ed1-a955-164e8ec5a3f9"},{"name":"@nutella","astNodeId":"1442883d-ee33-4666-b495-56874f21c331"}],"astNodeIds":["1c330299-3c9d-46db-b123-f1002e99fffa"]}},{"pickle":{"id":"6db1df40-14f9-48c0-9f5f-5e46c965e6dd","uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1001_amazonArama.feature","name":"TC02 amazon java arama","language":"en","steps":[{"text":"kullanici amazon sayfasina gider","id":"775bf6b4-b958-43ae-a4a9-2ab39ad0c204","astNodeIds":["88faf09a-b10b-45fe-a245-b35f0185b0f9"]},{"text":"java icin arama yapar","id":"c2ea022c-234b-4e0f-bb63-1bc9882fab9d","astNodeIds":["e78435f6-31f6-4508-873c-4a0c37cd074c"]},{"text":"sonucun z icerdigini test eder","id":"ee7e1152-0e3f-4890-a827-b504390da8ac","astNodeIds":["fcf00948-26b4-4ccc-b7fb-6cbf18f48600"]},{"text":"sayfayi kapatir","id":"b0ced606-df45-453c-a2fa-1bae00fdaf49","astNodeIds":["b5b482ec-b7d6-4dfe-b4e4-2ad269cfcef3"]}],"tags":[{"name":"@Paralel1","astNodeId":"ee57494d-738a-4ad5-aeff-ca6a254ea8d4"},{"name":"@amazon","astNodeId":"901e03af-a46d-44f9-b822-2e68a656e251"},{"name":"@java","astNodeId":"71b5d3cc-5576-40e2-956a-88b3a7eb0eb5"}],"astNodeIds":["f3132d90-2377-4d4c-9708-d378e9c91aa8"]}},{"pickle":{"id":"3e58f048-a73e-44bc-b38c-f321cc4fc78d","uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1001_amazonArama.feature","name":"TC03 amazon java arama","language":"en","steps":[{"text":"kullanici amazon sayfasina gider","id":"0f181d22-ceed-41e0-8442-65cc042be8f1","astNodeIds":["b6739036-3bc9-4be6-b63b-ed96b7ecfcee"]},{"text":"ipad icin arama yapar","id":"b44d12eb-b9c9-4223-855d-55406f08a536","astNodeIds":["41c0673a-1566-4115-b79f-cae969ec4545"]},{"text":"sonucun ipad icerdigini test eder","id":"2c47c086-b6ae-4593-b753-87c6610e1a02","astNodeIds":["665e813e-1905-4240-9969-b14f7591ad44"]},{"text":"sayfayi kapatir","id":"281b565a-0d8a-4107-859a-88051598de31","astNodeIds":["627f5431-79c8-40f9-bab8-64f05bd826a5"]}],"tags":[{"name":"@Paralel1","astNodeId":"ee57494d-738a-4ad5-aeff-ca6a254ea8d4"},{"name":"@amazon","astNodeId":"45ca3f11-84e1-45a0-be6d-361dce617c3c"},{"name":"@ipad","astNodeId":"91e89c2e-6871-4cb1-8795-495e92c34de1"}],"astNodeIds":["d8af323d-ecef-4ca6-87f9-1776aa56c5c2"]}},{"source":{"uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1003_amazonParametreliArama.feature","data":"@Paralel1\r\nFeature: US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder\r\n\r\n  @rapor2\r\n  Scenario: TC07 istenen kelimenin oldugunu test etme\r\n    Given kullanici \"amazonUrl\" sayfasina gider\r\n    And \"armut\" icin arama yapar\r\n    Then sonucun \"muz\" icerdigini test eder\r\n    And sayfayi kapatir\r\n\r\n\r\n\r\n    # parametre olarak yazdigimiz kelimeyi stepdefinition\u0027da String olarak kullanacaksa\r\n    # ne yazdigimiz onemli degil \"armut\" gibi\r\n\r\n    # Ancak eger parametre olarak yazdigimiz kelimeyi configuration.properties\u0027den alacaksak\r\n    # burada yazdigimiz parametre\u0027nin configuration.properties\u0027deki yazim ile ayni olmasi gerekir\r\n    # \"amazonUrl\" gibi, eger yazim farkli olursa nullPointerException verir\r\n\r\n    # Buradaki parametre ile configuration.properties\u0027deki key ayni olduktan sonra\r\n    #step definition\u0027da parametre adi olarak ne yazdigimizin bir onemi olmaz\r\n","mediaType":"text/x.cucumber.gherkin+plain"}},{"gherkinDocument":{"uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1003_amazonParametreliArama.feature","feature":{"location":{"line":2,"column":1},"tags":[{"location":{"line":1,"column":1},"name":"@Paralel1","id":"a18927fe-dd33-4437-8521-c886be195c1b"}],"language":"en","keyword":"Feature","name":"US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder","children":[{"scenario":{"location":{"line":5,"column":3},"tags":[{"location":{"line":4,"column":3},"name":"@rapor2","id":"d0976477-d240-42cd-ac4c-6799f92efd3b"}],"keyword":"Scenario","name":"TC07 istenen kelimenin oldugunu test etme","steps":[{"location":{"line":6,"column":5},"keyword":"Given ","text":"kullanici \"amazonUrl\" sayfasina gider","id":"50072beb-0c49-47c9-b3a8-bff4a7726e08"},{"location":{"line":7,"column":5},"keyword":"And ","text":"\"armut\" icin arama yapar","id":"c6f7f295-fe0d-4e92-aff6-c61fe9926d57"},{"location":{"line":8,"column":5},"keyword":"Then ","text":"sonucun \"muz\" icerdigini test eder","id":"e1861f24-e09c-4c82-a733-f9134684111a"},{"location":{"line":9,"column":5},"keyword":"And ","text":"sayfayi kapatir","id":"febeb9d1-dd3d-469c-979f-0114d06b637e"}],"id":"42124959-0149-452a-a367-abdb49ae3949"}}]},"comments":[{"location":{"line":13,"column":1},"text":"    # parametre olarak yazdigimiz kelimeyi stepdefinition\u0027da String olarak kullanacaksa"},{"location":{"line":14,"column":1},"text":"    # ne yazdigimiz onemli degil \"armut\" gibi"},{"location":{"line":16,"column":1},"text":"    # Ancak eger parametre olarak yazdigimiz kelimeyi configuration.properties\u0027den alacaksak"},{"location":{"line":17,"column":1},"text":"    # burada yazdigimiz parametre\u0027nin configuration.properties\u0027deki yazim ile ayni olmasi gerekir"},{"location":{"line":18,"column":1},"text":"    # \"amazonUrl\" gibi, eger yazim farkli olursa nullPointerException verir"},{"location":{"line":20,"column":1},"text":"    # Buradaki parametre ile configuration.properties\u0027deki key ayni olduktan sonra"},{"location":{"line":21,"column":1},"text":"    #step definition\u0027da parametre adi olarak ne yazdigimizin bir onemi olmaz"}]}},{"pickle":{"id":"2aec6c8f-558b-4fed-ae14-084a3e83b720","uri":"file:///C:/Users/user/IdeaProjects/com.batch30Cucumber/src/test/resources/features/US1003_amazonParametreliArama.feature","name":"TC07 istenen kelimenin oldugunu test etme","language":"en","steps":[{"text":"kullanici \"amazonUrl\" sayfasina gider","id":"c1b145c4-d0cc-4ff1-a675-ae2a5e28f96f","astNodeIds":["50072beb-0c49-47c9-b3a8-bff4a7726e08"]},{"text":"\"armut\" icin arama yapar","id":"646ded04-c26e-4183-8d91-2c26259898b3","astNodeIds":["c6f7f295-fe0d-4e92-aff6-c61fe9926d57"]},{"text":"sonucun \"muz\" icerdigini test eder","id":"12ba1501-3410-4850-a0da-61560c8072af","astNodeIds":["e1861f24-e09c-4c82-a733-f9134684111a"]},{"text":"sayfayi kapatir","id":"3227e9f2-a876-497c-b6ec-a2058665c297","astNodeIds":["febeb9d1-dd3d-469c-979f-0114d06b637e"]}],"tags":[{"name":"@Paralel1","astNodeId":"a18927fe-dd33-4437-8521-c886be195c1b"},{"name":"@rapor2","astNodeId":"d0976477-d240-42cd-ac4c-6799f92efd3b"}],"astNodeIds":["42124959-0149-452a-a367-abdb49ae3949"]}},{"testCase":{"id":"d08a4408-588f-462d-9eb7-ad294571b5ad","pickleId":"6db1df40-14f9-48c0-9f5f-5e46c965e6dd","testSteps":[{"id":"36ce9dc8-c02e-46da-9093-7cd10ad81b60","hookId":"a136e6ac-7a41-4811-8434-539a2530ddcf"},{"id":"2c075af8-dd1c-405e-aef2-42f453eca7b3","pickleStepId":"775bf6b4-b958-43ae-a4a9-2ab39ad0c204","stepDefinitionIds":["73b7c480-e483-4e09-b313-ab0e76e930cb"],"stepMatchArgumentsLists":[{}]},{"id":"e41ea756-28a0-4824-9fa3-89da361a88d0","pickleStepId":"c2ea022c-234b-4e0f-bb63-1bc9882fab9d","stepDefinitionIds":["3255e1d8-c349-4261-b316-b1d48918372f"],"stepMatchArgumentsLists":[{}]},{"id":"9955cd5f-d81a-4d47-a1d4-8142c488ab29","pickleStepId":"ee7e1152-0e3f-4890-a827-b504390da8ac","stepMatchArgumentsLists":[{}]},{"id":"0a00d492-630e-4b24-8148-85e020b676a6","pickleStepId":"b0ced606-df45-453c-a2fa-1bae00fdaf49","stepDefinitionIds":["209770d8-b432-46a5-a459-5701d3fa1f39"],"stepMatchArgumentsLists":[{}]},{"id":"628cb97e-181e-4278-b890-293cda58a214","hookId":"c9c13ebd-02de-4be4-ae70-644245a5d43a"}]}},{"testCaseStarted":{"timestamp":{"seconds":"1636625480","nanos":191106900},"testCaseId":"d08a4408-588f-462d-9eb7-ad294571b5ad","id":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepStarted":{"timestamp":{"seconds":"1636625480","nanos":262597400},"testStepId":"36ce9dc8-c02e-46da-9093-7cd10ad81b60","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"nanos":1312400}},"timestamp":{"seconds":"1636625480","nanos":263909800},"testStepId":"36ce9dc8-c02e-46da-9093-7cd10ad81b60","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepStarted":{"timestamp":{"seconds":"1636625480","nanos":273028600},"testStepId":"2c075af8-dd1c-405e-aef2-42f453eca7b3","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"7","nanos":424311100}},"timestamp":{"seconds":"1636625487","nanos":697339700},"testStepId":"2c075af8-dd1c-405e-aef2-42f453eca7b3","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepStarted":{"timestamp":{"seconds":"1636625487","nanos":699818900},"testStepId":"e41ea756-28a0-4824-9fa3-89da361a88d0","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepFinished":{"testStepResult":{"status":"PASSED","duration":{"seconds":"5","nanos":137935200}},"timestamp":{"seconds":"1636625492","nanos":837754100},"testStepId":"e41ea756-28a0-4824-9fa3-89da361a88d0","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepStarted":{"timestamp":{"seconds":"1636625492","nanos":843057900},"testStepId":"9955cd5f-d81a-4d47-a1d4-8142c488ab29","testCaseStartedId":"98ed1592-f524-4285-bd02-a5c5ea034d42"}},{"testStepFinished":{"testStepResult":{"status":"UNDEFINED","duration":{"nanos":3092600}},"timestamp":{"seconds":"1636625492","

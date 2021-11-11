@@ -23,7 +23,7 @@ public class ConfigReader {
             properties=new Properties();
             properties.load(fileInputStream);
 
-        } catch (FileNotFoundException e) { // ioException parent oldugu icin bu catc istenirse silinebilir
+        } catch (FileNotFoundException e) { // ioException parent oldugu icin bu catch istenirse silinebilir
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
