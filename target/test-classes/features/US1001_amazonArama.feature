@@ -13,7 +13,7 @@ Feature: US1001 amazon arama
   Scenario: TC02 amazon java arama
     When kullanici amazon sayfasina gider
     And java icin arama yapar
-    Then sonucun z icerdigini test eder
+    Then sonucun java icerdigini test eder
     And sayfayi kapatir
 
 

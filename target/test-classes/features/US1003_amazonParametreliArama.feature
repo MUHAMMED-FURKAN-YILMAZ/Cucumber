@@ -5,7 +5,7 @@ Feature: US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder
   Scenario: TC07 istenen kelimenin oldugunu test etme
     Given kullanici "amazonUrl" sayfasina gider
     And "armut" icin arama yapar
-    Then sonucun "muz" icerdigini test eder
+    Then sonucun "armut" icerdigini test eder
     And sayfayi kapatir
 
 
