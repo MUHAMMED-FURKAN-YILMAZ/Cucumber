@@ -1,0 +1,122 @@
+        Cucumber Framework Building
+
+Gherkin Plugin
+1.Intellij IDEA->Preferences - Plugins
+2.Marketplace -> Gherkin
+3.Install
+if needed pls restart your IDE
+
+https://cucumber.io/docs/gherkin/reference/#keywords
+
+Cucumber for Java Plugin
+1.Intellij IDEA->Preferences - Plugins
+2.Marketplace -> Cucumber for Java
+3.Install
+
+For windows users, please use File->settings to get plugins
+MAKE SURE YOU DISABLE OR UNINSTALL THIS PLUGIN
+(if you have it, do NOT install if you don't have)'
+Sub-steps Intellij Plugin
+===========================================================
+
+Create a maven project
+1.Open Intellij
+2.File->new->project
+3.select Maven
+4.Click next
+5.Git the arrow down
+6.Enter GroupId: com.vytrack
+7.ArtifacId: EU2CucumberSelenium
+8.Finish
+9.This window if it asks
+10.Select Enable auto import
+
+ADD DEPENDENCIES TO POM.xml
+
+  <properties>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
+    <dependencies>
+        <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+        <dependency>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-java</artifactId>
+            <version>3.141.59</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.github.bonigarcia/webdrivermanager -->
+        <dependency>
+            <groupId>io.github.bonigarcia</groupId>
+            <artifactId>webdrivermanager</artifactId>
+            <version>4.0.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-java -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-java</artifactId>
+            <version>5.7.0</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/io.cucumber/cucumber-junit -->
+        <dependency>
+            <groupId>io.cucumber</groupId>
+            <artifactId>cucumber-junit</artifactId>
+            <version>5.7.0</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+==========================================
+
+Creating resources folder
+1.Right click to test
+2.New -> directory
+3.Name: resources
+4.OK
+
+Creating com.vytrack.runners
+1.Right click on java
+2.new->package
+3.Name: com.vytrack.runners
+4.OK
+
+Create utilities package
+1.Right click on vytrack
+2.new->package
+3.name: utilities
+4.OK
+
+Create step_definitions
+1.Right click on vytrack
+2.new->package
+3.name:step_definitions
+4.OK
+
+Creating features
+1.Right click resources
+2.New->directory
+3.name: features
+4.OK
+
+Create a feature file
+1.Right click on features
+2.new -> file
+3.name: Login.feature
+4.OK
+===============================
+
+Features directory--> we keep .feature files here
+Feature files--> we keep scenarios(tests) in gherkin language
+
+Cucumber Framework Building
+CukesRunner
+1.Right click on runners package
+2.New->Class
+3.Enter name: CukesRunner
+4.OK
+
+@CucumberOptions --> enables passing different run options to cucumber
+features--> points to the location of feature files
+Step defs
+1.Right click step_definitions package
+2.new->Java class
+3.Name: LoginStepDefs
+4.OK
