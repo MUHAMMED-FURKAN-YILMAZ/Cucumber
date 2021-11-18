@@ -1,81 +1,89 @@
 [
   {
-    "line": 2,
+    "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-17T21:22:57.970Z",
-        "line": 5,
-        "name": "TC18 Concort Hotel Database Read Test",
+        "start_timestamp": "2021-11-18T20:33:09.710Z",
+        "line": 4,
+        "name": "TC19 DB util ile Concort Hotel Database Read Test",
         "description": "",
-        "id": "1012-kullanici-concort-hotel-database-ini-test-eder;tc18-concort-hotel-database-read-test",
+        "id": "1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder;tc19-db-util-ile-concort-hotel-database-read-test",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 2262306300,
+              "duration": 1452786200,
               "status": "passed"
             },
-            "line": 7,
-            "name": "kullanici CHQA database\u0027ine baglanir",
+            "line": 6,
+            "name": "kullanici DBUtil ile CHQA database\u0027ine baglanir",
             "match": {
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_chqa_database_ine_baglanir()"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullaniciDBUtilIleCHQADatabaseIneBaglanir()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 488857300,
+              "duration": 234321200,
               "status": "passed"
             },
-            "line": 8,
-            "name": "kullanici \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
+            "line": 7,
+            "name": "kullanici DBUtil ile \"tHOTELROOM\" tablosundaki \"Price\" verilerini alir",
             "match": {
               "arguments": [
                 {
                   "val": "\"tHOTELROOM\"",
-                  "offset": 10
+                  "offset": 21
                 },
                 {
                   "val": "\"Price\"",
-                  "offset": 36
+                  "offset": 47
                 }
               ],
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_tablosundaki_verilerini_alir(java.lang.String,java.lang.String)"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullaniciDBUtilIleTablosundakiVerileriniAlir(java.lang.String,java.lang.String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 1397856700,
+              "duration": 1443735900,
               "status": "passed"
             },
-            "line": 9,
-            "name": "kullanici \"Price\" sutunundaki verileri okur ve istedigi islemleri yapar",
+            "line": 8,
+            "name": "kullanici DBUtil ile \"Price\" sutunundaki 5. fiyatin 470 oldugunu test eder",
             "match": {
               "arguments": [
                 {
                   "val": "\"Price\"",
-                  "offset": 10
+                  "offset": 21
+                },
+                {
+                  "val": "5",
+                  "offset": 41
+                },
+                {
+                  "val": "470",
+                  "offset": 52
                 }
               ],
-              "location": "dbStepdefinitions.DbStepDefinition.kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(java.lang.String)"
+              "location": "dbStepdefinitions.DbUtilStepDefinitions.kullaniciDBUtilIleSutunundakiFiyatinOldugunuTestEder(java.lang.String,int,int)"
             },
             "keyword": "And "
           }
         ],
         "tags": [
           {
-            "name": "@db"
+            "name": "@dbutil"
           }
         ]
       }
     ],
-    "name": "1012 Kullanici concort Hotel database\u0027ini test eder",
+    "name": "1013 Kullanici DB util ile concort Hotel database\u0027ini test eder",
     "description": "",
-    "id": "1012-kullanici-concort-hotel-database-ini-test-eder",
+    "id": "1013-kullanici-db-util-ile-concort-hotel-database-ini-test-eder",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US1012_DbRead.feature",
+    "uri": "file:src/test/resources/features/US1013_DbUtilTestler.feature",
     "tags": []
   }
 ]

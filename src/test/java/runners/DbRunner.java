@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         },
         features="src/test/resources/features",
         glue="dbStepdefinitions",
-        tags="@db"  ,
+        tags="@dbutil"  ,
 
         dryRun= false
         // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir

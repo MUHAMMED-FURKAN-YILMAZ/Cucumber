@@ -1,5 +1,6 @@
 package dbStepdefinitions;
 
+import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import org.junit.Assert;
 
@@ -45,7 +46,7 @@ public class DbStepDefinition {
 //        resultSet.getRow() 	=> Hangi rowdasin
 //        resultSet.first() 		=> Ilk rowa git
 //        resultSet.last 			=> son row a git
-//        resultSet.absolute(5)	=> 5inci row a git
+//        resultSet.absolute(5)	=> 5'inci row a git
 //        resultSet.getObject("BookName") 	=>BookName row daki objeyi ver
 //        resultSet.getString("BookName") 	=>BookName row daki degeri ver
 
@@ -108,10 +109,11 @@ public class DbStepDefinition {
         List<Double> ilkYuzSayi= new ArrayList<>();
 
         while (sayac<=100 && resultSet.next()){
-           // ilkYuzSayi.add(Double.valueOf(resultSet.getObject(field).toString()));
+
             ilkYuzSayi.add(resultSet.getDouble(field));
             sayac++;
         }
+
         System.out.println(ilkYuzSayi);
         System.out.println(ilkYuzSayi.size());
 
@@ -123,4 +125,5 @@ public class DbStepDefinition {
 
         Assert.assertTrue(yedinciSayi==620);
     }
+
 }

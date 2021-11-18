@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="4.572">
-    <testcase classname="1012 Kullanici concort Hotel database'ini test eder" name="TC18 Concort Hotel Database Read Test" time="4.262">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.38">
+    <testcase classname="1013 Kullanici DB util ile concort Hotel database'ini test eder" name="TC19 DB util ile Concort Hotel Database Read Test" time="3.177">
         <system-out>
-            <![CDATA[Given kullanici CHQA database'ine baglanir..................................passed
-And kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir.............passed
-And kullanici "Price" sutunundaki verileri okur ve istedigi islemleri yapar.passed
+            <![CDATA[Given kullanici DBUtil ile CHQA database'ine baglanir.......................passed
+And kullanici DBUtil ile "tHOTELROOM" tablosundaki "Price" verilerini alir..passed
+And kullanici DBUtil ile "Price" sutunundaki 5. fiyatin 470 oldugunu test eder.passed
 ]]>
         </system-out>
     </testcase>
