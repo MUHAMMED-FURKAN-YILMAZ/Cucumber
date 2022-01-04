@@ -10,6 +10,7 @@ Feature: 1013 Kullanici DB util ile concort Hotel database'ini test eder
 
 
   @dbupdate
-  Scenario: Kullanici tHOTEL tablosundan istedigi Emaili update eder
+  Scenario: TC20 Kullanici tHOTEL tablosundan istedigi Emaili update eder
+
     Given kullanici DBUtil ile CHQA database'ine baglanir
     Then  DBU IDHotel degeri 1016 olan kaydin Email degerini "elveda@gmail.com" yapar
