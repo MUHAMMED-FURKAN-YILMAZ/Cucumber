@@ -23,6 +23,10 @@ public class Driver {
     // hebuz bu driver ile ilgili ayarlar yapmadigim icin baska class'lardan bu driver class'i kullanmasin diye
     // erisimi private yaptik (sadece bu class'in kullanimina cik yaptik)
 
+    private static ThreadLocal<WebDriver> driverPool=new ThreadLocal();
+    // Bu interface'i kullanma sebebimiz driver'imiz singleton pattern oldugu icin paralel test yapamama durumunu
+    // onlemek amaciyla bu interface'i ekledik
+
     public static WebDriver getDriver() {
 
 
